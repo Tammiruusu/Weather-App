@@ -26,7 +26,19 @@ weatherForm.addEventListener("submit", async event => {
 }); 
 
 async function getWeatherData(city) {
-    const apiURL = ``;
+
+    const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+
+    const response = await fetch(apiURL);
+
+    console.log(response);
+
+    if(!response.ok){
+        throw new Error("Kaupunkia ei voitu hakea");
+    }
+
+    return await response.json();
+
 }
 
 function displayWeatherInfo(data) {
