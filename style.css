@@ -1,6 +1,6 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #1c150f;
+    background-color: #0F0F0F;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -24,19 +24,19 @@ button[type="Submit"] {
     padding: 10px 20px;
     font-weight: bold;
     font-size: 2rem;
-    background-color: #5a6258;
-    color: #633443;
+    background-color: #5A5859;
+    color: #688D26;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: #382A32;
+    background-color: #26271F;
 }
 
 .card {
-    background: linear-gradient(180deg, #66C774, #382A32);
+    background: linear-gradient(180deg, #5A5859, #26271F);
     padding: 50px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
     min-width: 300px;
@@ -59,19 +59,21 @@ p {
 .cityDisplay, .tempDisplay {
     font-size: 3.5rem;
     font-weight: bold;
-    color: #633443;
+    color: #688D26;
     margin-bottom: 25px;
 }
 
 .humidityDisplay {
-    font-weight: bold;
-    margin-bottom: 25px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    color: #3E600A;
 }
 
 .descDisplay {
     font-style: italic;
     font-weight: bold;
     font-size: 2rem;
+    color: #3E600A;
 }
 
 .weatherEmoji {
